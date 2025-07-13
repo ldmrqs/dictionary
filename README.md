@@ -1,6 +1,6 @@
-# Go (Golang) Dictionary - English
+# Go (Golang) Dictionary
 
-A complete reference of Go commands translated to English in a direct and straightforward way.
+A complete reference of Go commands in a direct and straightforward way.
 
 ## Table of Contents
 
