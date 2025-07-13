@@ -13,6 +13,7 @@ Make programming more accessible by translating commands and concepts in a clear
 | 🐍 **Python** | ✅ Complete | [View Dictionary](../../tree/python) | 60+ commands |
 | 🐹 **Go (Golang)** | ✅ Complete | [View Dictionary](../../tree/golang) | 80+ commands |
 | 🟨 **Git** | ✅ Complete | [View Dictionary](../../tree/git) | 60+ commands |
+| 🌴 **Terraform** | ✅ Complete | [View Dictionary](../../tree/terraform) | commands + best practices |
 | ☕ **Java** | 📝 Planned | - | - |
 | 🔷 **TypeScript** | 📝 Planned | - | - |
 
