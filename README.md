@@ -1,6 +1,6 @@
-# Python Dictionary - English
+# Python Dictionary
 
-A complete reference of Python commands translated to English in a direct and straightforward way.
+A complete reference of Python commands in a direct and straightforward way.
 
 ## Table of Contents
 
