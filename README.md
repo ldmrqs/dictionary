@@ -1,6 +1,6 @@
 # 📚 Programming Language Dictionaries
 
-A comprehensive collection of programming language commands and syntax translated into clear, straightforward English. No fluff, just the essentials!
+A comprehensive collection of programming language commands and syntax translated into clear, straightforward. No fluff, just the essentials!
 
 ## 🎯 Mission
 
@@ -12,11 +12,8 @@ Make programming more accessible by translating commands and concepts in a clear
 |-----------|--------|------|----------|
 | 🐍 **Python** | ✅ Complete | [View Dictionary](../../tree/python) | 60+ commands |
 | 🐹 **Go (Golang)** | ✅ Complete | [View Dictionary](../../tree/golang) | 80+ commands |
-| 🟨 **JavaScript** | 🚧 In development | [View Dictionary](../../tree/javascript) | Coming soon |
+| 🟨 **Git** | ✅ Complete | [View Dictionary](../../tree/git) | 60+ commands |
 | ☕ **Java** | 📝 Planned | - | - |
-| 🦀 **Rust** | 📝 Planned | - | - |
-| 💎 **Ruby** | 📝 Planned | - | - |
-| ⚡ **C++** | 📝 Planned | - | - |
 | 🔷 **TypeScript** | 📝 Planned | - | - |
 
 ## 🚀 How to Use
