@@ -1,165 +1,479 @@
-# 📚 Programming Language Dictionaries
+# Python Dictionary - English
 
-A comprehensive collection of programming language commands and syntax translated into clear, straightforward English. No fluff, just the essentials!
+A complete reference of Python commands translated to English in a direct and straightforward way.
 
-## 🎯 Mission
+## Table of Contents
 
-Make programming more accessible by translating commands and concepts in a clear, direct way that gets straight to the point.
-
-## 🌟 Available Languages
-
-| Language | Status | Link | Commands |
-|-----------|--------|------|----------|
-| 🐍 **Python** | ✅ Complete | [View Dictionary](../../tree/python) | 60+ commands |
-| 🐹 **Go (Golang)** | ✅ Complete | [View Dictionary](../../tree/golang) | 80+ commands |
-| 🟨 **JavaScript** | 🚧 In development | [View Dictionary](../../tree/javascript) | Coming soon |
-| ☕ **Java** | 📝 Planned | - | - |
-| 🦀 **Rust** | 📝 Planned | - | - |
-| 💎 **Ruby** | 📝 Planned | - | - |
-| ⚡ **C++** | 📝 Planned | - | - |
-| 🔷 **TypeScript** | 📝 Planned | - | - |
-
-## 🚀 How to Use
-
-1. **Choose your language** from the table above
-2. **Click the link** to go to the specific branch
-3. **Browse the README.md** in that branch for the complete dictionary
-4. **Use Ctrl+F** to search for specific commands
-
-## 💡 Quick Examples
-
-### Python
-```python
-print("Hello!")  # print message to screen
-if True:         # if (condition)
-    pass         # do nothing
-```
-
-### Go
-```go
-fmt.Println("Hello!")  // print line to screen
-if true {              // if (condition)
-    // code here
-}
-```
-
-## 🤝 Contributing
-
-Want to help grow this project? Here's how:
-
-### 📋 We Accept
-
-- **New commands** for existing languages
-- **Corrections** and improvements
-- **New languages** (create a new branch)
-- **Clearer examples**
-- **Better explanations**
-
-### 🔄 How to Contribute
-
-1. **Fork** this repository
-2. **Create a branch** for your contribution:
-   ```bash
-   git checkout -b my-contribution
-   ```
-3. **Make your changes** in the specific language branch
-4. **Commit** with a clear message:
-   ```bash
-   git commit -m "Python: add regex commands"
-   ```
-5. **Open a Pull Request**
-
-### 🆕 Adding a New Language
-
-To add a new language:
-
-1. **Create a new branch** from main:
-   ```bash
-   git checkout main
-   git checkout -b language-name
-   ```
-
-2. **Create README.md** following our template:
-   ```markdown
-   # [Language] Dictionary - English
-   
-   ## Table of Contents
-   - [Basic Commands](#basic-commands)
-   - [Control Structures](#control-structures)
-   - ...
-   
-   ## Basic Commands
-   | Command | Meaning |
-   |---------|---------|
-   | `command` | what it does |
-   ```
-
-3. **Update the main table** in this README
-
-## 📖 Language Template
-
-Each dictionary should include:
-
-- **Navigable table of contents**
-- **Basic commands** (print, variables, etc.)
-- **Control structures** (if, for, while)
-- **Functions** and methods
-- **Data types**
-- **Practical examples** for each section
-- **Language-specific tips**
-
-## 🎨 Project Standards
-
-### Formatting
-- Use **tables** for commands
-- Include **code examples** in each section
-- **Bold** important concepts
-- **Emojis** for visual appeal
-
-### Language Style
-- **Clear, direct English** 
-- **No unnecessary complexity** - get to the point
-- **Working examples** that actually run
-- **Encouraging** and accessible tone
-
-### Organization
-- **Well-divided sections** by concept
-- **Clickable index** at the top
-- **Logical progression** from basic to advanced
-- **Easy search** with Ctrl+F
-
-## 📊 Stats
-
-- **Languages**: 2 complete, 6 planned
-- **Total commands**: 140+
-- **Contributors**: Be the next one!
-
-## 🏆 Hall of Fame
-
-Contributors who helped build this project:
-
-- 👤 **Your name here** - First contribution!
-
-## 📝 License
-
-This project is **open source** and can be used freely in studies and projects.
-
-## 🌟 Support the Project
-
-Like the project? Consider:
-
-- ⭐ **Star** the repository
-- 🍴 **Fork** and contribute
-- 📢 **Share** with other developers
-- 💡 **Suggest improvements** contacting me bellow by clicking on "Direct contact"
-
-## 📞 Contact
-
-Have questions or suggestions? 
-- 📧 **Direct contact**: [contact@ldmrqs.com]
+- [Basic Commands](#basic-commands)
+- [Control Structures](#control-structures)
+- [Functions and Classes](#functions-and-classes)
+- [Error Handling](#error-handling)
+- [Logical Operators](#logical-operators)
+- [Data Structures](#data-structures)
+- [List Methods](#list-methods)
+- [String Methods](#string-methods)
+- [Import and Modules](#import-and-modules)
+- [Graphical Interface (GUI)](#graphical-interface-gui)
+- [Useful Built-in Functions](#useful-built-in-functions)
+- [Symbols and Operators](#symbols-and-operators)
+- [Special Values](#special-values)
 
 ---
 
-**Made with ❤️ for the developer community**
+## Basic Commands
 
-*"Programming is hard enough, at least let the documentation be clear!"*
+Essential commands you'll use all the time:
+
+| Command | Meaning |
+|---------|---------|
+| `print` | print/display a message on screen |
+| `input` | receive user input |
+| `len` | get the length/size of something |
+| `type` | check the type of a variable |
+| `str` | convert to text (string) |
+| `int` | convert to integer number |
+| `float` | convert to decimal number |
+| `bool` | convert to true/false |
+
+**Example:**
+```python
+name = input("Enter your name: ")  # receive user input
+print(f"Hello, {name}!")           # print message on screen
+length = len(name)                 # get length
+print(f"Your name has {length} letters")
+```
+
+---
+
+## Control Structures
+
+To control your program's flow:
+
+| Command | Meaning |
+|---------|---------|
+| `if` | if (condition) |
+| `elif` | else if (condition) |
+| `else` | else |
+| `for` | for each item in... |
+| `while` | while (condition is true) |
+| `break` | stop/exit the loop |
+| `continue` | skip to next loop iteration |
+| `pass` | do nothing (placeholder) |
+
+**Example:**
+```python
+for i in range(5):      # for each number from 0 to 4
+    if i == 2:          # if i equals 2
+        continue        # skip to next iteration
+    elif i == 4:        # else if i equals 4
+        break           # stop the loop
+    else:               # else
+        print(i)        # print the number
+```
+
+---
+
+## Functions and Classes
+
+To organize and reuse code:
+
+| Command | Meaning |
+|---------|---------|
+| `def` | define a function |
+| `return` | return a value from function |
+| `class` | create a class |
+| `self` | reference to the object itself |
+| `super` | access parent class |
+| `__init__` | class constructor method |
+
+**Example:**
+```python
+def greeting(name):             # define function
+    return f"Hello, {name}!"    # return value
+
+class Person:                   # create class
+    def __init__(self, name):   # constructor method
+        self.name = name        # self = reference to object
+    
+    def speak(self):
+        return f"{self.name} is speaking"
+```
+
+---
+
+## Error Handling
+
+To deal with problems in code:
+
+| Command | Meaning |
+|---------|---------|
+| `try` | try to execute code |
+| `except` | catch specific error |
+| `finally` | always execute, with or without error |
+| `raise` | raise an error |
+
+**Example:**
+```python
+try:                            # try to execute
+    number = int(input("Enter a number: "))
+    result = 10 / number
+except ValueError:              # catch specific error
+    print("That's not a number!")
+except ZeroDivisionError:       # catch another error
+    print("Cannot divide by zero!")
+finally:                        # always execute
+    print("Operation finished")
+```
+
+---
+
+## Logical Operators
+
+For comparisons and logic:
+
+| Command | Meaning |
+|---------|---------|
+| `and` | and (both conditions true) |
+| `or` | or (at least one condition true) |
+| `not` | not (invert logical value) |
+| `in` | is contained in |
+| `is` | is the same object as |
+
+**Example:**
+```python
+age = 25
+if age >= 18 and age <= 65:    # and (both conditions)
+    print("Can work")
+    
+if "a" in "house":             # is contained in
+    print("Has the letter 'a'")
+    
+if not False:                  # not (invert)
+    print("This is true")
+```
+
+---
+
+## Data Structures
+
+To store and organize information:
+
+| Command | Meaning |
+|---------|---------|
+| `list` | list (mutable array) |
+| `tuple` | tuple (immutable array) |
+| `dict` | dictionary (key-value) |
+| `set` | set (no duplicates) |
+| `range` | generate sequence of numbers |
+
+**Example:**
+```python
+fruits = ["apple", "banana", "grape"]       # list
+coordinates = (10, 20)                      # tuple
+person = {"name": "John", "age": 30}        # dictionary
+numbers = {1, 2, 3, 3, 4}                  # set (no duplicates)
+sequence = range(1, 6)                     # generate numbers 1 to 5
+```
+
+---
+
+## List Methods
+
+To work with lists:
+
+| Command | Meaning |
+|---------|---------|
+| `append` | add item to end of list |
+| `insert` | insert item at specific position |
+| `remove` | remove first item with specific value |
+| `pop` | remove and return item by index |
+| `sort` | sort list |
+| `reverse` | reverse list order |
+
+**Example:**
+```python
+list_items = [3, 1, 4]
+list_items.append(2)         # add to end: [3, 1, 4, 2]
+list_items.insert(0, 0)      # insert at position 0: [0, 3, 1, 4, 2]
+list_items.remove(3)         # remove first 3: [0, 1, 4, 2]
+last = list_items.pop()      # remove last: [0, 1, 4], last = 2
+list_items.sort()            # sort: [0, 1, 4]
+list_items.reverse()         # reverse: [4, 1, 0]
+```
+
+---
+
+## String Methods
+
+To manipulate text:
+
+| Command | Meaning |
+|---------|---------|
+| `split` | split string into list |
+| `join` | join list into string |
+| `replace` | replace part of string |
+| `upper` | convert to uppercase |
+| `lower` | convert to lowercase |
+| `strip` | remove spaces from edges |
+
+**Example:**
+```python
+text = "  Python is cool  "
+words = text.split()            # split into list: ["Python", "is", "cool"]
+joined = "-".join(words)        # join with hyphen: "Python-is-cool"
+new = text.replace("cool", "awesome") # replace: "  Python is awesome  "
+uppercase = text.upper()        # uppercase: "  PYTHON IS COOL  "
+lowercase = text.lower()        # lowercase: "  python is cool  "
+clean = text.strip()            # no spaces: "Python is cool"
+```
+
+---
+
+## Import and Modules
+
+To use code from other libraries:
+
+| Command | Meaning |
+|---------|---------|
+| `import` | import complete module |
+| `from` | import something specific from module |
+| `as` | give alias to import |
+
+**Example:**
+```python
+import math                    # import complete module
+from datetime import datetime  # import something specific
+import pandas as pd           # give alias
+
+# Usage:
+print(math.pi)                # use complete module
+now = datetime.now()          # use specific import
+df = pd.DataFrame()           # use alias
+```
+
+---
+
+## Graphical Interface (GUI)
+
+To create windows and interfaces with tkinter:
+
+### Basic Widgets
+
+| Command | Meaning |
+|---------|---------|
+| `tkinter` | standard library for creating windows and interfaces |
+| `Tk` | create main window |
+| `Label` | static text on screen |
+| `Button` | clickable button |
+| `Entry` | text field for user input |
+| `Text` | multiline text area |
+| `Frame` | container to organize widgets |
+
+### Layout and Organization
+
+| Command | Meaning |
+|---------|---------|
+| `pack` | organize widgets automatically |
+| `grid` | organize widgets in grid |
+| `place` | position widget manually |
+
+### Window Control
+
+| Command | Meaning |
+|---------|---------|
+| `mainloop` | keep window open (main loop) |
+| `geometry` | set window size and position |
+| `title` | set window title |
+| `destroy` | close window |
+
+**Example:**
+```python
+import tkinter as tk
+
+window = tk.Tk()                    # create main window
+window.title("My Application")      # set title
+window.geometry("300x200")          # set size
+
+label = tk.Label(window, text="Hello!") # create text
+button = tk.Button(window, text="Click") # create button
+
+label.pack()                        # organize automatically
+button.pack()                       # organize automatically
+
+window.mainloop()                   # keep window open
+```
+
+### Other GUI Libraries
+
+| Command | Meaning |
+|---------|---------|
+| `PyQt5` | advanced library for interfaces (tkinter alternative) |
+| `Kivy` | library for mobile and desktop apps |
+| `Pygame` | library for games and graphics |
+
+---
+
+## Useful Built-in Functions
+
+Ready-made functions that make your life easier:
+
+| Command | Meaning |
+|---------|---------|
+| `enumerate` | number items in a list |
+| `zip` | combine multiple lists |
+| `map` | apply function to each item |
+| `filter` | filter items by condition |
+| `sum` | sum numeric items |
+| `max` | find largest value |
+| `min` | find smallest value |
+| `sorted` | return sorted list |
+| `reversed` | return reverse iterator |
+| `all` | check if all are true |
+| `any` | check if any is true |
+
+**Example:**
+```python
+numbers = [1, 2, 3, 4, 5]
+names = ["Ana", "Bruno", "Carlos"]
+
+# enumerate: number items
+for i, name in enumerate(names):
+    print(f"{i}: {name}")  # 0: Ana, 1: Bruno, 2: Carlos
+
+# zip: combine lists
+for num, name in zip(numbers, names):
+    print(f"{num} - {name}")  # 1 - Ana, 2 - Bruno, 3 - Carlos
+
+# map: apply function to each item
+doubled = list(map(lambda x: x * 2, numbers))  # [2, 4, 6, 8, 10]
+
+# filter: filter by condition
+evens = list(filter(lambda x: x % 2 == 0, numbers))  # [2, 4]
+
+# Aggregation functions
+print(sum(numbers))     # 15 (sum)
+print(max(numbers))     # 5 (largest)
+print(min(numbers))     # 1 (smallest)
+```
+
+---
+
+## Symbols and Operators
+
+Special symbols you'll use:
+
+| Symbol | Meaning |
+|--------|---------|
+| `==` | equal to (comparison) |
+| `!=` | not equal to |
+| `<=` | less than or equal |
+| `>=` | greater than or equal |
+| `+=` | add and assign |
+| `-=` | subtract and assign |
+| `*=` | multiply and assign |
+| `/=` | divide and assign |
+| `//` | integer division |
+| `%` | remainder of division |
+| `**` | power (raised to) |
+| `[]` | access item by index |
+| `{}` | dictionary or set |
+| `()` | tuple or function call |
+| `:` | slice or block definition |
+| `#` | comment (ignored line) |
+| `"""` | multiline string or docstring |
+
+**Example:**
+```python
+# Comparisons
+a = 10
+b = 20
+print(a == b)    # False (equal to)
+print(a != b)    # True (not equal to)
+print(a <= b)    # True (less than or equal)
+
+# Assignment operators
+a += 5          # a = a + 5 (now a = 15)
+a *= 2          # a = a * 2 (now a = 30)
+
+# Mathematical operators
+print(7 // 2)   # 3 (integer division)
+print(7 % 2)    # 1 (remainder)
+print(2 ** 3)   # 8 (2 raised to 3)
+
+# Access elements
+list_items = [1, 2, 3]
+print(list_items[0])     # 1 (first item)
+print(list_items[1:3])   # [2, 3] (slice)
+```
+
+---
+
+## Special Values
+
+Special Python values:
+
+| Value | Meaning |
+|-------|---------|
+| `None` | null/empty value |
+| `True` | true |
+| `False` | false |
+| `global` | global variable |
+| `nonlocal` | variable from outer scope |
+| `lambda` | anonymous function (one line) |
+| `with` | context manager |
+| `yield` | generate value in generator function |
+| `del` | delete variable or item |
+
+**Example:**
+```python
+# None: null value
+result = None
+if result is None:
+    print("No result")
+
+# True/False: booleans
+active = True
+if active:
+    print("It's active")
+
+# lambda: anonymous function
+double = lambda x: x * 2
+print(double(5))  # 10
+
+# with: context manager
+with open("file.txt", "r") as file:
+    content = file.read()
+# File is automatically closed
+```
+
+---
+
+## How to Use This Dictionary
+
+### Quick Search
+
+Use Ctrl+F (or Cmd+F on Mac) to quickly find any command.
+
+### Contributing
+
+Found a command that's missing? Feel free to contribute to this dictionary!
+
+### Study Tips
+
+1. **Start with basics**: Focus first on basic commands and control structures
+2. **Practice with examples**: Each section has practical examples for you to test
+3. **Use as reference**: You don't need to memorize everything, use this dictionary for reference
+4. **Experiment**: The best way to learn is by practicing!
+
+---
+
+## License
+
+This dictionary is open source and can be used freely in your projects and studies.
+
+---
+
+**Last updated:** July 2025  
+**Version:** 1.0
+
+*"Python is a language that lets you express ideas clearly and concisely. This dictionary helps you do that in English!"*
